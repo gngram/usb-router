@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "devicerouter"
+version = "0.1.0"
+description = "Host↔GUI-VM device routing over vsock with a PyQt5 UI (+ test-file mode)"
+authors = [{ name = "You" }]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+  # PyQt5 is only needed for the GUI. You can also install it manually.
+  # "PyQt5>=5.15.0",
+]
+
+[project.optional-dependencies]
+gui = ["PyQt5>=5.15.0"]
+
+[project.scripts]
+devicerouter-gui = "devicerouter.cli.gui_vm:main"
+devicerouter-host = "devicerouter.cli.host:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
