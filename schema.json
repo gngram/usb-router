@@ -1,0 +1,18 @@
+{
+  "devices": {
+    "1a86:7523": {
+      "permitted_vms": ["vm-a", "vm-b", "vm-x"],
+      "Vendor": "QinHeng",
+      "Product": "CH340 Serial"
+    },
+    "046d:0825": {
+      "permitted_vms": ["vm-a", "vm-c", "vm-d"],
+      "Vendor": "Logitech",
+      "Product": "Webcam C270"
+    }
+  },
+  "current-mount": {
+    "1a86:7523": "vm-b",
+    "046d:0825": null
+  }
+}
