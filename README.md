@@ -6,9 +6,13 @@ develop without vsock by using a JSON file as the “transport”.
 ## Install (editable)
 ```bash
 pip install -e ".[gui]"
+```
 
 On COSMIC/Wayland you may want:
+
+```bash
 export QT_QPA_PLATFORM=wayland
+```
 
 ## Schema
 
